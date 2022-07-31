@@ -1,0 +1,159 @@
+@charset 'UTF-8';
+
+:root {
+    --grey: #2f2f2f;
+    --lightgrey: #DDDDDD;
+    --gold: #9c836a;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    color: var(--grey);
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f2f2f;
+    padding: 8px 12px;
+}
+a {
+    text-decoration: none;
+    color: beige;
+}
+.navbar_logo {
+    font-size: 15px;
+    color: antiquewhite;
+}
+.navbar_logo i {
+    color: aliceblue;
+}
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.navbar_menu > li {
+    padding: 8px 12px;
+    position: relative;
+}
+.navbar_menu li:hover {
+    background-color: var(--gold);
+    border-radius: 4px;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 37.6px;
+    left: 0;
+    width: 70px;
+    padding: 0;
+    background: var(--gold);
+    text-align: center;
+    list-style-type: none;
+    border-radius: 4px;
+    margin-top: auto;
+    margin-bottom: 700px;
+}
+.sub-menu #steak {
+   
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+p{
+    line-height: 1.5;
+}
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+ 
+#menu {
+    padding: 4rem 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#price {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+#price div {
+    display: flex;
+    justify-content: center;
+}
+
+#location {
+    padding: 4rem 1rem;
+}
+#location p {
+    text-align: center;
+}
+
+#reservation {
+    padding: 4rem 1rem;
+}
+.login-form {
+    width: 300px;
+    background-color: var(--lightgrey);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+.text-input {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.submit-btn{
+    background-color: var(--gold);
+    color: #DDDDDD;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+.forget-link a {
+    font-size: 13px;
+    color: var(--grey);
+}
+
+
+
+
+
+
+
+
+
+
