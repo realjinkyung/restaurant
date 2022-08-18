@@ -109,6 +109,14 @@ h2 {
     display: flex;
     justify-content: center;
 }
+table {
+    width: 60%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #444444;
+}
 
 #location {
     padding: 4rem 1rem;
